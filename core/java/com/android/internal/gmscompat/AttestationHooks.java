@@ -86,15 +86,14 @@ public final class AttestationHooks {
 
     private static void spoofBuildGms() {
         // Alter model name and fingerprint to avoid hardware attestation enforcement
-        setBuildField("BRAND", "google");
-        setBuildField("MANUFACTURER", "Huawei");
-        setBuildField("DEVICE", "angler");
-        setBuildField("ID", "NPD90G");
-        setBuildField("FINGERPRINT", "google/angler/angler:7.0/NPD90G/3051502:user/release-keys");
-        setBuildField("PRODUCT", "angler");
-        setBuildField("MODEL", "Nexus 6P");
-        setVersionField("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.N);
-        setVersionFieldString("SECURITY_PATCH", "2016-07-05");
+        setBuildField("BRAND", "motorola");
+        setBuildField("MANUFACTURER", "motorola");
+        setBuildField("DEVICE", "clark");
+        setBuildField("ID", "MPHS24.49-18-8");
+        setBuildField("FINGERPRINT", "motorola/clark_retus/clark:6.0/MPHS24.49-18-8/4:user/release-keys");
+        setBuildField("PRODUCT", "clark_retus");
+        setBuildField("MODEL", "XT1575");
+        setVersionFieldString("SECURITY_PATCH", "2016-09-01");
     }
 
     public static void initApplicationBeforeOnCreate(Application app) {
